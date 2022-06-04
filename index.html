@@ -16,14 +16,6 @@
 <html>
   <head>
     <title>sachinrajesh</title>
-    <script type="text/javascript">
-        function injectJS(){    
-            var frame =  $('iframe');
-            var contents =  frame.contents();
-            var body = contents.find('body').attr("oncontextmenu", "return false");
-            var body = contents.find('body').append('<div>New Div</div>');    
-        }
-    </script>
   </head>
   <body>
     <iframe 
@@ -31,7 +23,6 @@
         frameborder="0"
         height="100%" 
         width="100%"
-        onload="injectJS()"
     >
     </iframe>
   </body>
