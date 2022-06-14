@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <style>
-    html, body{
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        overflow: hidden;
-    }
-    iframe {
-        overflow:hidden;
-        height:100%;
-        width:100%;
-    }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  iframe {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
 </style>
 <html>
-  <head>
-    <title>sachinrajesh</title>
-  </head>
-  <body>
-    <iframe 
-        src="SachinPR-Resume-2022.pdf#toolbar=0" 
-        frameborder="0"
-        height="100%" 
-        width="100%"
-    >
-    </iframe>
-  </body>
+
+<head>
+  <title>sachinrajesh</title>
+</head>
+
+<body>
+  <iframe id="iframeTou" src="SachinPR-Resume-2022.pdf#toolbar=0" frameborder="0" height="100%" width="100%">
+    <p>Your web browser doesn't support iframe!</p>
+  </iframe>
+  <script>
+    function OpenTermsOfUsePopup() {
+      $('#iframeTou').attr('src', 'Privacy_Policy/H2eEile%20-Terms-of-Use.pdf#page=1&zoom=100');
+      $('#divTermsOfUse').modal("show");
+      return false;
+    }
+  </script>
+</body>
+
 </html>
