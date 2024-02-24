@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",  // <=== enables static exports
-    reactStrictMode: true,
-    distDir: 'docs'
+    // ENABLE WHILE EXPORTING
+    // output: "export",
+    // reactStrictMode: true,
+    // distDir: 'docs'
 };
 
 export default nextConfig;
